@@ -10,7 +10,7 @@
 7.	Mission Control shall receive command execution status.
 8.	System shall record commands and critical events with timestamp and operator ID. 
 Non-Functional Requirements (NFRs)
-1.	System should continue working during temporary communication interruptions.
-2.	Command processing should normally finish within 5 seconds.
-3.	System should support multiple rovers at the same time.
+1.	Rover must enter Safe Mode within 3 seconds if battery temperature is too high or battery capacity is critically low. 
+2.	System must support at least 20 rovers simultaneously
+3.	Commands can only be accepted from operators who are authenticated and have the required role/authorization. 
 4.	Only authenticated operators should be allowed to send commands. 
